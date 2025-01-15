@@ -39,7 +39,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-th
 yay -S --noconfirm vesktop floorp-bin spotify nautilus
 
 
-yay -S --noconfirm code qbittorrent obs-studio
+yay -S --noconfirm code qbittorrent obs-studio zoom
 
 yay -S --noconfirm  obsidian miru-bin proton-vpn-gtk-app proton-mail
 
