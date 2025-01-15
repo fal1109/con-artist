@@ -24,8 +24,6 @@ yay -S --noconfirm cbonsai yazi alsamixer easyeffects
 
 # hyprland dotfiles 
 
-git clone https://github.com/fal1109/con_artist.git
-
 cp -r con-artist/.config ~/
 cp con-artist/.zshrc ~/
 cp con-artist/.bashrc ~/
