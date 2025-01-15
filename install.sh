@@ -2,11 +2,7 @@
 
 sudo pacman -S yay
 
-#install git
-
-yay -S git
-
-# hyprland setup 
+# hyprland setup and dependencies
 
 yay -S hyprland hyprlock hypridle hyprutils hyprgraphics hyprcursor hyprwayland-scanner hyprshot rofi tofi 
 
