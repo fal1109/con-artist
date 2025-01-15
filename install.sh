@@ -26,9 +26,9 @@ yay -S --noconfirm cbonsai yazi alsamixer easyeffects
 
 git clone https://github.com/fal1109/con_artist.git
 
-cp -r dotfiles/.config ~/
-cp dotfiles/.zshrc ~/
-cp dotfiles/.bashrc ~/
+cp -r con-artist/.config ~/
+cp con-artist/.zshrc ~/
+cp con-artist/.bashrc ~/
 
 # sddm dotfiles
 
