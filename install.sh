@@ -49,6 +49,8 @@ yay -S --noconfirm scrcppy
 
 yay -S --noconfirm waydroid
 
+yay -S --noconfirm scrcpy
+
 # set shell to fish
 
 yay -S --noconfirm fish
