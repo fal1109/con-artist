@@ -10,7 +10,7 @@ yay -S hyprland hyprlock hypridle hyprutils hyprgraphics hyprcursor hyprwayland-
 
 yay -S --noconfirm waybar-cava cava cmus networkmanager
 
-yay -S --noconfirm btop fastfetch kitty neovim
+yay -S --noconfirm btop fastfetch kitty neovim neofetch
 
 yay -s --noconfirm network-manager-applet thunar swww pywal
 
@@ -48,6 +48,8 @@ yay -S --noconfirm wine
 yay -S --noconfirm scrcppy
 
 yay -S --noconfirm waydroid
+
+yay -S --noconfirm android-tools
 
 yay -S --noconfirm scrcpy
 
