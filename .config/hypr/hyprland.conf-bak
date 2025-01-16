@@ -9,7 +9,7 @@ monitor=,preferred,auto,1
 ###################
 
 $terminal = kitty
-$files = thunar
+$files = nautilus
 $menu = tofi-drun --config .config/tofi/config | xargs hyprctl dispatch exec --
 $editor = nvim
 
@@ -23,7 +23,10 @@ exec-once = swww init
 exec-once = waybar & swaync
 exec-once = nm-applet
 exec-once = blueman-applet
-exec-once = /home/dhanesh/.config/hypr/scripts/autorotate.sh
+exec-once = /home/con_artist/.config/hypr/scripts/autorotate.sh
+exec-once = vesktop
+exec-once = spotify
+exec-once = floorp-bin
 
 #############################
 ### ENVIRONMENT VARIABLES ###
@@ -33,7 +36,7 @@ env = XDG_CURRENT_DESKTOP,Hyprland
 env = XDG_SESSION_TYPE,wayland
 env = XDG_SESSION_DESKTOP,Hyprland
 env = HYPRCURSOR_THEME,WhiteSur-cursors
-env = XCURSOR_SIZE,24
+env = XCURSOR_SIZE,15
 env = XCURSOR_THEME,WhiteSur-cursors
 env = QT_QPA_PLATFORMTHEME,qt6ct
 env = GTK_THEME, Orchis-Dark
@@ -70,10 +73,10 @@ decoration {
     active_opacity = 1.0
     inactive_opacity = 0.8
 
-    drop_shadow = false
-    shadow_range = 4
-    shadow_render_power = 3
-    col.shadow = rgba(1a1a1aee)
+#    drop_shadow = false
+#    shadow_range = 4
+#    shadow_render_power = 3
+#    col.shadow = rgba(1a1a1aee)
 
     # https://wiki.hyprland.org/Configuring/Variables/#blur
     blur {
@@ -255,14 +258,19 @@ bind = , XF86AudioNext, exec, playerctl next
 bind = , XF86AudioPrev, exec, playerctl previous
 
 # Misc
-bind = $mainMod, W, exec, /home/dhanesh/.config/hypr/scripts/rofiwallpaper.sh
-bind = $mainMod SHIFT, W, exec, /home/dhanesh/.config/hypr/scripts/aniwallpaper.sh
+bind = $mainMod, W, exec, /home/con_artist/.config/hypr/scripts/rofiwallpaper.sh
+bind = $mainMod SHIFT, W, exec, /home/con_artist/.config/hypr/scripts/aniwallpaper.sh
 bind = $mainMod, A, exec, ~/.config/hypr/scripts/float.sh
-bind = $mainMod SHIFT, G, exec, /home/dhanesh/.config/hypr/scripts/gamemode.sh
-bind = ,Print, exec, hyprshot -m output -m eDP-1 -o /home/dhanesh/Pictures/Screenshots
-bind = SHIFT, Print, exec, hyprshot -m region -o /home/dhanesh/Pictures/Screenshots 
+bind = $mainMod SHIFT, G, exec, /home/con_artist/.config/hypr/scripts/gamemode.sh
+bind = SUPER_SHIFT, S, exec, hyprshot -m output -m eDP-1 -o /home/con_artist/Pictures/Screenshots
+bind = SHIFT, Print, exec, hyprshot -m region -o /home/con_artist/Pictures/Screenshots 
 bind = $mainMod SHIFT, L, exec, hyprlock
 bind = $mainMod SHIFT, Z, exec, pypr zoom
+bind = SUPER, B, exec, floorp-bin
+bind = SUPER, V, exec, vesktop
+bind = SUPER, S, exec, spotify
+bind = SUPER, F, exec, nautilus
+
 
 ##############################
 ### WINDOWS AND WORKSPACES ###
@@ -301,6 +309,7 @@ windowrulev2 = opacity 0.8, class:([Ss]potify)
 windowrulev2 = opacity 0.7, class:([Nn]otion)
 windowrulev2 = opacity 0.8, class:(org.pulseaudio.pavucontrol)
 windowrulev2 = opacity 0.8, class:(jetbrains-studio)
+windowrulev2 = opacity 0.7, class:([Ll]ocalsend)
 windowrulev2 = opacity 0.7, class:([Nn]emo)
 windowrulev2 = opacity 0.7, class:(xdg-desktop-portal-gtk)
 windowrulev2 = opacity 0.7, class:(Android-file-transfer)
@@ -315,4 +324,3 @@ windowrulev2 = idleinhibit fullscreen, fullscreen:1
 # Disable blur for LibreWolf in fullscreen
 windowrulev2 = opacity 1.0, LibreWolf, fullscreen:1
 windowrulev2 = opacity 1.0, Stremio, fullscreen:1
-
