@@ -7,15 +7,20 @@ i have not tested it yet. please execute the script at caution. i will not be re
 ## instructions
  this is like a ground up thing, like your wifi isnt set up that kind of ground up.
 
- <ol type='a'>
-    <li>set your wifi</li>
-    <li>get git
-    ``pacman -S git``</li>
-    <li>clone the repo</li>
-        ```git clone https://github.com/fal1109/con-artist```
-    <li>go to the file</li>
-    ```cd con-artist```
-    <li>run the script</li>
-    ```sh install.sh```
-</ol>
+ 
+1. set your wifi
+2. get git
+        
+        pacman -S git
+    
+3. clone the repo
+        
+        git clone https://github.com/fal1109/con-artist    
+4. go to the file
+    
+        cd con-artist
+    
+5. run the script
+    
+        sh install.sh
     
