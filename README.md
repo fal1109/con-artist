@@ -11,11 +11,11 @@ i have not tested it yet. please execute the script at caution. i will not be re
     <li>set your wifi</li>
     <li>get git
     ``pacman -S git``</li>
-    <li>clone the repo
-      ``git clone https://github.com/fal1109/con-artist``</li>
-    <li>go to the file
-     ``cd con-artist``</li>
-    <li>run the script
-     ``sh install.sh``</li>
+    <li>clone the repo</li>
+        ``git clone https://github.com/fal1109/con-artist``
+    <li>go to the file</li>
+    ``cd con-artist``
+    <li>run the script</li>
+    ``sh install.sh``
 </ol>
     
