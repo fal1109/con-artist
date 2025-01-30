@@ -7,13 +7,15 @@ i have not tested it yet. please execute the script at caution. i will not be re
 ## instructions
  this is like a ground up thing, like your wifi isnt set up that kind of ground up.
 
- i. set your wifi
- ii. get git
-    ``pacman -S git``
- iii. clone the repo
-      ``git clone https://github.com/fal1109/con-artist``
- iv. go to the file
-     ``cd con-artist``
- v. run the script
-     ``sh install.sh``
+ <ol type='a'>
+    <li>set your wifi</li>
+    <li>get git
+    ``pacman -S git``</li>
+    <li>clone the repo
+      ``git clone https://github.com/fal1109/con-artist``</li>
+    <li>go to the file
+     ``cd con-artist``</li>
+    <li>run the script
+     ``sh install.sh``</li>
+</ol>
     
