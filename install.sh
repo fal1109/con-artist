@@ -10,7 +10,7 @@ yay -S --noconfrim hyprland hyprlock hypridle hyprutils hyprgraphics hyprcursor 
 
 yay -S --noconfirm waybar-cava cava cmus networkmanager
 
-yay -S --noconfirm btop fastfetch kitty neovim neofetch
+yay -S --noconfirm btop kitty neovim neofetch
 
 yay -s --noconfirm network-manager-applet thunar swww pywal
 
