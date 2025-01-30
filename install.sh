@@ -32,6 +32,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-th
 
 yay -S --noconfirm vesktop floorp-bin spotify nautilus
 
+yay -S --noconfirm spotify spicetify-cli spotdl
 
 yay -S --noconfirm code qbittorrent obs-studio zoom
 
@@ -39,7 +40,9 @@ yay -S --noconfirm  obsidian miru-bin proton-vpn-gtk-app proton-mail
 
 # games 
 
-yay -S --noconfirm tetrio-plus-bin osu-lazer pokerogue
+yay -S --noconfirm tetrio-plus-bin osu-lazer
+
+yay -S --noconfirm pokemmo pokerogue
 
 # emulators
 
