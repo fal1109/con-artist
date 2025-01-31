@@ -4,7 +4,7 @@ sudo pacman -S yay
 
 # hyprland setup and dependencies
 
-yay -S hyprland hyprlock hypridle hyprutils hyprgraphics hyprcursor hyprwayland-scanner hyprshot rofi tofi 
+yay -S --noconfrim hyprland hyprlock hypridle hyprutils hyprgraphics hyprcursor hyprwayland-scanner hyprshot rofi tofi 
 
 # dotfiles dependencies and terminal flex things
 
@@ -29,14 +29,19 @@ cp con-artist/.bashrc ~/
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
 
 # apps
+yay -S --noconfirm vesktop floorp-bin
 
-yay -S --noconfirm vesktop floorp-bin spotify nautilus
+yay -S --noconfirm spotify nautilus
 
-yay -S --noconfirm spotify spicetify-cli spotdl
+yay -S --noconfirm spicetify-cli spotdl
 
-yay -S --noconfirm code qbittorrent obs-studio zoom
+yay -S --noconfirm code qbittorrent
 
-yay -S --noconfirm  obsidian miru-bin proton-vpn-gtk-app proton-mail
+yay -S --noconfirm obs-studio zoom
+
+yay -S --noconfirm  obsidian miru-bin
+
+yay -S --noconfirm proton-vpn-gtk-app proton-mail
 
 # games 
 
