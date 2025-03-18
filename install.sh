@@ -20,9 +20,9 @@ yay -S --noconfirm cbonsai yazi alsamixer easyeffects
 
 # hyprland dotfiles 
 
-cp -r con-artist/.config ~/
-cp con-artist/.zshrc ~/
-cp con-artist/.bashrc ~/
+cp -r con-artist/.config ~/.config
+cp con-artist/.zshrc ~/.zshrc
+cp con-artist/.bashrc ~/.bashrc
 
 # sddm dotfiles
 
@@ -45,17 +45,15 @@ yay -S --noconfirm proton-vpn-gtk-app proton-mail
 
 # games 
 
-yay -S --noconfirm tetrio-plus-bin osu-lazer
+yay -S --noconfirm tetrio-plus-bin
 
-yay -S --noconfirm pokemmo pokerogue
+yay -S --noconfirm pokerogue
 
 # emulators
 
 yay -S --noconfirm wine 
 
-yay -S --noconfirm scrcppy
-
-yay -S --noconfirm waydroid
+yay -S --noconfirm scrcpy
 
 yay -S --noconfirm android-tools
 
