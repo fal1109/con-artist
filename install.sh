@@ -12,7 +12,7 @@ yay -S --noconfirm waybar-cava cava cmus networkmanager
 
 yay -S --noconfirm btop kitty neovim neofetch
 
-yay -s --noconfirm network-manager-applet thunar swww pywal
+yay -s --noconfirm network-manager-applet nautilus swww pywal
 
 yay -S --noconfirm blueman pavucontrol nwg-look nwg-desktops mpv sxiv
 
@@ -20,9 +20,9 @@ yay -S --noconfirm cbonsai yazi alsamixer easyeffects
 
 # hyprland dotfiles 
 
-cp -r con-artist/.config ~/.config
-cp con-artist/.zshrc ~/.zshrc
-cp con-artist/.bashrc ~/.bashrc
+cp -r con-artist/.config ~/
+cp con-artist/.zshrc ~/
+cp con-artist/.bashrc ~/
 
 # sddm dotfiles
 
@@ -31,7 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-th
 # apps
 yay -S --noconfirm vesktop floorp-bin
 
-yay -S --noconfirm spotify nautilus
+yay -S --noconfirm spotify 
 
 yay -S --noconfirm spicetify-cli spotdl
 
