@@ -1,0 +1,11 @@
+[global]
+timeout = 10  # Set timeout in seconds
+
+[urgency_low]
+timeout = 5
+
+[urgency_normal]
+timeout = 10
+
+[urgency_critical]
+timeout = 0  # 0 means it stays until dismissed

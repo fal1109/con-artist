@@ -1,0 +1,140 @@
+@import url('/home/falcon/.cache/wal/colors-waybar.css');
+
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 10px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, .0);
+}
+
+#battery,
+#clock,
+#workspaces,
+#custom-rofi,
+#tray,
+#custom-right,
+#custom-vm,
+#custom-macvm,
+#custom-left,
+#custom-power,
+#custom-bluetooth,
+#mpris,
+#pulseaudio,
+#backlight {
+   color: @foreground;
+   background: @background;
+   margin: 4px 0px 4px 0px;
+   opacity: 1;
+   border: 0px solid @color0;
+}
+
+tooltip {
+    background: @background;
+    color: @foreground;
+    border-radius: 22px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @color0;
+}
+
+#workspaces button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: @foreground;
+}
+
+#workspaces button.active {
+    background: @color1;
+    color: black;
+    margin-left: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 0px;
+}
+
+#workspaces button:hover {
+    background: @color3;
+    border: none;
+}
+
+#workspaces {
+    padding: 0px 5px;
+}
+
+#custom-rofi {
+    color: @color4; 
+    padding-right: 5px;
+}
+
+#battery {
+    color: @color9;
+}
+
+#tray {
+    padding-right: 10px;
+}
+
+#clock {
+   color: @color9;
+}
+
+#custom-right {
+    margin-right: 9px;
+    padding-right: 3px;
+    border-radius: 0px 22px 22px 0px;
+}
+
+#custom-left {
+    margin-left: 9px;
+    padding-left: 3px;
+    border-radius: 22px 0px 0px 22px;
+}
+
+#custom-vm {
+    padding-left: 5px;
+    color: @color4;
+}
+
+#custom-macvm {
+    padding-left: 13px;
+    padding-bottom: 0.6px;
+    color: @color4;
+}
+
+#mpris {
+    color: @color2;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-power {
+   padding-left: 5px;
+   color: @color4;
+}
+
+#custom-bluetooth{
+   padding-right: 5px;
+   color: @color5;
+}
+
+#pulseaudio {
+    color: @color12;
+    padding-left: 10px;
+}
+
+#backlight {
+    color: @color12;
+    padding-left: 8px;
+}

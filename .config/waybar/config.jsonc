@@ -1,0 +1,88 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "height": 30,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+
+    "modules-center": ["custom/left", "hyprland/workspaces", "custom/right"],
+    "modules-right": ["custom/left", "tray", "battery", "pulseaudio", "backlight", "custom/power", "custom/right"],
+    "modules-left": ["custom/left", "custom/rofi", "clock", "mpris", "custom/right"],
+
+    "custom/rofi": {
+        "format": "󰣇 {}",
+        "on-click": "waypaper",
+        "tooltip": false
+    },
+
+    "custom/power": {
+        "format": " {}",
+        "on-click": "wlogout"
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent_workspaces": {}
+    },
+
+    
+
+    "tray": {
+        "icon-size": 15,
+        "spacing": 7
+    },
+
+    "clock": {
+        "format": "{:%I:%M}"
+    },
+
+    "custom/left": {
+        "format": " ",
+        "interval": "once",
+        "tooltip": false
+    },
+
+    "custom/right": {
+        "format": " ",
+        "interval": "once",
+        "tooltip": false
+    },
+
+    "mpris": {
+        "format": "{artist} - {title}",
+        "format-paused": "{artist} - {title}",
+        "player-icons": {
+            "default": "🎵"
+        },
+        "max-length": 85
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "󰝟 ",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": "󰓃 ",
+            "car": "󰄍 ",
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol",
+        "scroll-step": 1
+    },
+
+    "backlight": {
+        "format": "{icon}",
+        "format-icons": ["󰃞 ", "󰃝 ", "󰃟 ", "󰃠 "],
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-"
+    },
+
+    "reload_style_on_change": true
+}
